@@ -66,7 +66,8 @@ export const siteConfig: SiteConfig = {
     maxPosts: 5, // 显示的最大文章数量
     tags: [], // 仅显示包含这些标签的文章
     excludeTags: [], // 排除包含这些标签的文章
-  }
+  },
+  googleAnalytics: "G-XXXXXXXXXX", // Google Analytics ID
 };
 ```
 

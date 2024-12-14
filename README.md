@@ -68,7 +68,8 @@ export const siteConfig: SiteConfig = {
     maxPosts: 5, // Maximum number of posts to display
     tags: [], // Only display posts with these tags
     excludeTags: [], // Exclude posts with these tags
-  }
+  },
+  googleAnalytics: "G-XXXXXXXXXX", // Google Analytics tracking ID
 };
 ```
 
