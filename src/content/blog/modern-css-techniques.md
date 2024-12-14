@@ -5,8 +5,6 @@ date: 2024-03-23
 tags: ["css", "web-development", "frontend"]
 ---
 
-# Modern CSS Techniques You Should Know
-
 CSS has evolved significantly in recent years. Let's explore some modern techniques that can improve your web development workflow.
 
 ## CSS Grid Layout

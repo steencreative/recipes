@@ -5,8 +5,6 @@ date: 2024-03-21
 tags: ["welcome", "first-post"]
 ---
 
-# Welcome to My Blog
-
 Hello everyone! This is my first blog post. I'm excited to share my thoughts and experiences with you.
 
 ## What to Expect

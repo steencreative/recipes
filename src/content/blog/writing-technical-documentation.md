@@ -5,8 +5,6 @@ date: 2024-03-22
 tags: ["documentation", "technical-writing", "best-practices"]
 ---
 
-# Writing Effective Technical Documentation
-
 Good technical documentation is crucial for any software project. Here's how to write documentation that helps rather than frustrates.
 
 ## Key Principles
