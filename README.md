@@ -21,6 +21,7 @@ If you find this project helpful, please consider giving it a star ⭐️.
 - 🔗 Social media integration
 - 📰 RSS feed & sitemap support
 - ⚡ Fast performance
+- 🛠️ Google analysis interation
 
 ![lighthouse score](https://github.com/larry-xue/larry-xue/blob/master/assets/lighthouse.gif)
 

@@ -12,6 +12,7 @@ export interface SiteConfig {
     rss?: boolean;
   };
   homepage: PostFilter;
+  googleAnalysis?: string;
 }
 
 export const siteConfig: SiteConfig = {
@@ -29,5 +30,6 @@ export const siteConfig: SiteConfig = {
     maxPosts: 5,
     tags: [],
     excludeTags: [],
-  }
+  },
+  googleAnalysis: "", // your google analysis id
 };
