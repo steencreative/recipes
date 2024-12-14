@@ -17,7 +17,7 @@
 - 🔍 SEO 优化
 - 📱 完全响应式
 - 🔗 社交媒体集成
-- 📰 RSS 订阅支持
+- 📰 RSS 订阅 & sitemap 支持
 - ⚡ 优秀的性能
 
 ![lighthouse score](https://github.com/larry-xue/larry-xue/blob/master/assets/lighthouse.gif)

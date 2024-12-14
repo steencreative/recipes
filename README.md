@@ -19,7 +19,7 @@ If you find this project helpful, please consider giving it a star ⭐️.
 - 🔍 SEO optimized
 - 📱 Fully responsive
 - 🔗 Social media integration
-- 📰 RSS feed support
+- 📰 RSS feed & sitemap support
 - ⚡ Fast performance
 
 ![lighthouse score](https://github.com/larry-xue/larry-xue/blob/master/assets/lighthouse.gif)
