@@ -18,6 +18,8 @@
 - 📰 RSS 订阅支持
 - ⚡ 优秀的性能
 
+![lighthouse score](https://github.com/larry-xue/larry-xue/blob/master/assets/lighthouse.gif)
+
 ## 安装
 
 1. 克隆仓库：

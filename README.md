@@ -20,6 +20,8 @@ If you find this project helpful, please consider giving it a star ⭐️.
 - 📰 RSS feed support
 - ⚡ Fast performance
 
+![lighthouse score](https://github.com/larry-xue/larry-xue/blob/master/assets/lighthouse.gif)
+
 ## Installation
 
 1. Clone the repository:
