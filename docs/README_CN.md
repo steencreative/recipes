@@ -25,11 +25,11 @@
 
 ## 安装
 
-1. 克隆仓库：
+1. 使用脚手架初始化：
 
    ```bash
-   git clone https://github.com/larry-xue/astro-zen-blog.git
-   cd astro-zen-blog
+   npm create astro@latest -- --template larry-xue/astro-zen-blog
+   cd ./to_your_project
    ```
 
 2. 安装依赖：

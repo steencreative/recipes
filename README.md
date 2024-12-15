@@ -27,11 +27,11 @@ If you find this project helpful, please consider giving it a star ⭐️.
 
 ## Installation
 
-1. Clone the repository:
+1. Use the Astro CLI to create a new project:
 
    ```bash
-   git clone https://github.com/larry-xue/astro-zen-blog.git
-   cd astro-zen-blog
+   npm create astro@latest -- --template larry-xue/astro-zen-blog
+   cd ./to_your_project
    ```
 
 2. Install dependencies:
