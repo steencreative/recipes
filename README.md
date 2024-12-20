@@ -100,6 +100,17 @@ Your content here...
 
 Of course, you can customize the metadata as needed in `src/content/config.ts`.
 
+## Creating New Posts
+
+To create a new blog post, this template provide an npm scripts to help you create a new post:
+
+```bash
+# this will create a new markdown file in src/content/blog/filename.md
+npm run new-post \<filename\>
+```
+
+You can customize the template of the new post in `scripts/new-post.js`.
+
 ## Build and Deploy
 
 1. Build your site:

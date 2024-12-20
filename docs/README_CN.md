@@ -98,6 +98,17 @@ image: "封面图片 URL"
 
 当然，你可以根据需要在 `src/content/config.ts` 中自定义元数据。
 
+## 创建新文章
+
+为了方便创建新文章，本模板提供了 npm 脚本：
+
+```bash
+# 这将创建一个新md文件，并保存至 src/content/blog/文件名.md
+npm run new-post \<文件名\>
+```
+
+你可以通过修改 scripts/new-post.js 文件来定制新文章的模板。
+
 ## 构建和部署
 
 1. 构建您的网站：
