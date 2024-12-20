@@ -27,7 +27,7 @@ const navItems = [
           </li>
         ))}
       </ul>
-      <Search />
+      {siteConfig.search && <Search />}
       <ThemeToggle />
     </div>
   </nav>
