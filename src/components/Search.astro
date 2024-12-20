@@ -21,6 +21,14 @@
   let searchModal
   let searchButton
   let closeButton
+  let searchDebounceTimeout
+
+  function debounce(func, wait) {
+    return (...args) => {
+      clearTimeout(searchDebounceTimeout)
+      searchDebounceTimeout = setTimeout(() => func(...args), wait)
+    }
+  }
 
   async function initialize() {
     const response = await fetch('/api/search.json')
@@ -32,7 +40,8 @@
     searchButton = document.getElementById('search-button')
     closeButton = document.getElementById('close-search')
 
-    searchInput?.addEventListener('input', handleSearch)
+    const debouncedSearch = debounce(handleSearch, 300)
+    searchInput?.addEventListener('input', debouncedSearch)
     searchButton?.addEventListener('click', openModal)
     closeButton?.addEventListener('click', closeModal)
 
@@ -49,6 +58,11 @@
         closeModal()
       }
     })
+
+    // Cleanup function
+    return () => {
+      clearTimeout(searchDebounceTimeout)
+    }
   }
 
   function openModal() {
@@ -66,6 +80,12 @@
   `
   }
 
+  function highlightText(text, query) {
+    if (!query) return text;
+    const regex = new RegExp(`(${query})`, 'gi');
+    return text.replace(regex, '<mark class="bg-yellow-200 dark:bg-yellow-800">$1</mark>');
+  }
+
   function handleSearch(e) {
     const query = e.target.value.toLowerCase()
 
@@ -79,7 +99,29 @@
         const searchContent = `${post.title} ${post.description} ${post.content} ${post.tags?.join(' ')}`.toLowerCase()
         return searchContent.includes(query)
       })
-      .slice(0, 5) // Limit to showing top 5 results
+      .map(post => {
+        // Find content match
+        const contentMatch = post.content.toLowerCase().indexOf(query.toLowerCase())
+        let matchedContent = ''
+        if (contentMatch !== -1) {
+          const start = Math.max(0, contentMatch - 50)
+          const end = Math.min(post.content.length, contentMatch + query.length + 50)
+          matchedContent = post.content.slice(start, end)
+          if (start > 0) matchedContent = '...' + matchedContent
+          if (end < post.content.length) matchedContent = matchedContent + '...'
+        }
+        
+        // Highlight matches in title and content
+        const highlightedTitle = highlightText(post.title, query)
+        const highlightedContent = highlightText(matchedContent, query)
+        
+        return { 
+          ...post, 
+          matchedContent: highlightedContent,
+          matchedTitle: highlightedTitle
+        }
+      })
+      .slice(0, 5)
 
     displayResults(results)
   }
@@ -100,20 +142,25 @@
               class="block p-4 hover:bg-gray-100 dark:hover:bg-gray-700 hover:rounded transition-all duration-200 transform"
             >
               <h3 class="font-medium text-gray-900 dark:text-white">
-              ${post.title}
+                ${post.matchedTitle || post.title}
               </h3>
               <p class="text-sm text-gray-500 dark:text-gray-400">
-              ${post.description || ''}
+                ${post.description || ''}
               </p>
+              ${post.matchedContent ? `
+                <p class="text-sm text-gray-600 dark:text-gray-300 mt-2 font-mono">
+                  ${post.matchedContent}
+                </p>
+              ` : ''}
               ${post.tags
-              ?.map(
-                (tag) => `
-                <span class="inline-block bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-full mt-2 mr-2">
-                  ${tag}
-                </span>
-                `
-              )
-              .join('')}
+                ?.map(
+                  (tag) => `
+                  <span class="inline-block bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded-full mt-2 mr-2">
+                    ${tag}
+                  </span>
+                  `
+                )
+                .join('')}
             </a>
           `
         )
