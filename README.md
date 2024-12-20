@@ -22,6 +22,7 @@ If you find this project helpful, please consider giving it a star ⭐️.
 - 📰 RSS feed & sitemap support
 - ⚡ Fast performance
 - 🛠️ Google analysis interation
+- 🔍 Local search functionality
 
 ![lighthouse score](https://github.com/larry-xue/larry-xue/blob/master/assets/lighthouse.gif)
 
@@ -70,6 +71,7 @@ export const siteConfig: SiteConfig = {
     excludeTags: [], // Exclude posts with these tags
   },
   googleAnalytics: "G-XXXXXXXXXX", // Google Analytics tracking ID
+  search: true, // Enable local search
 };
 ```
 
@@ -139,7 +141,7 @@ astro-zen-blog/
 
 ## Features Roadmap
 
-- [ ] Search functionality
+- [x] Search functionality
 - [ ] Commenting Integration
 - [ ] ...and more
 

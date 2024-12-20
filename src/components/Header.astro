@@ -1,6 +1,7 @@
 ---
 import ThemeToggle from './ThemeToggle.astro';
 import { siteConfig } from '../config';
+import Search from './Search.astro';
 
 const navItems = [
   { href: '/', text: 'Home' },
@@ -26,6 +27,7 @@ const navItems = [
           </li>
         ))}
       </ul>
+      <Search />
       <ThemeToggle />
     </div>
   </nav>

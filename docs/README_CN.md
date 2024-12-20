@@ -20,6 +20,7 @@
 - 📰 RSS 订阅 & sitemap 支持
 - ⚡ 优秀的性能
 - 🛠️ Google 分析集成
+- 🔍 本地搜索功能
 
 ![lighthouse score](https://github.com/larry-xue/larry-xue/blob/master/assets/lighthouse.gif)
 
@@ -68,6 +69,7 @@ export const siteConfig: SiteConfig = {
     excludeTags: [], // 排除包含这些标签的文章
   },
   googleAnalytics: "G-XXXXXXXXXX", // Google Analytics ID
+  search: true, // 启用本地搜索
 };
 ```
 
@@ -137,7 +139,7 @@ astro-zen-blog/
 
 ## 功能路线图
 
-- [ ] 搜索功能
+- [x] 搜索功能
 - [ ] 评论集成
 - [ ] ...更多
 

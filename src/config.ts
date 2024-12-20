@@ -13,6 +13,7 @@ export interface SiteConfig {
   };
   homepage: PostFilter;
   googleAnalysis?: string;
+  search?: boolean;
 }
 
 export const siteConfig: SiteConfig = {
@@ -32,4 +33,5 @@ export const siteConfig: SiteConfig = {
     excludeTags: [],
   },
   googleAnalysis: "", // your google analysis id
+  search: true, // set this to false if you don't want to provide a search feature
 };
