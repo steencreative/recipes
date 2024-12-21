@@ -143,6 +143,7 @@ astro-zen-blog/
 
 - [x] Search functionality
 - [ ] Commenting Integration
+- [ ] Enhance Transition and Animation
 - [ ] ...and more
 
 ## Contributing
