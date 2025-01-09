@@ -1,6 +1,6 @@
 # Astro Zen Blog
 
-<img width="1523" alt="ZEN-HOME" src="https://github.com/user-attachments/assets/6ff4e905-eaf1-4412-9667-581da5da5229" />
+<img width="1523" alt="ZEN-HOME" src="https://github.com/user-attachments/assets/3d8c3250-ec82-4cdf-9e84-ce4fd069b040" />
 
 A minimal, responsive, and SEO-friendly blog template built with Astro. Features clean design, dark mode support, and markdown-based content management.
 
