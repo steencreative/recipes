@@ -1,6 +1,6 @@
 # Astro Zen 博客
 
-<img width="1523" alt="ZEN-HOME" src="https://github.com/user-attachments/assets/6ff4e905-eaf1-4412-9667-581da5da5229" />
+<img width="1523" alt="ZEN-HOME" src="https://github.com/user-attachments/assets/3d8c3250-ec82-4cdf-9e84-ce4fd069b040" />
 
 一个使用 Astro 构建的极简、响应式和 SEO 友好的博客模板。具有简洁的设计、暗色模式支持和基于 markdown 的内容管理。
 
