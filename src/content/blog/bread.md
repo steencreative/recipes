@@ -1,8 +1,8 @@
 ---
-title: "Writing Effective Technical Documentation"
-description: "Learn best practices for creating clear and useful technical documentation."
+title: "Bread"
+description: "Bread"
 ## date: 2024-03-22
-tags: ["documentation", "technical-writing", "best-practices"]
+tags: ["bread"]
 ---
 
 Good technical documentation is crucial for any software project. Here's how to write documentation that helps rather than frustrates.
