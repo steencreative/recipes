@@ -1,7 +1,7 @@
 ---
 title: "Modern CSS Techniques You Should Know"
 description: "Explore powerful CSS features and techniques for modern web development."
-date: 2024-03-23
+## date: 2024-03-23
 tags: ["css", "web-development", "frontend"]
 ---
 
