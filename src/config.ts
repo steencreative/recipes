@@ -19,7 +19,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   site: "https://steencreative.github.io/recipes/", // your site url
   title: "Recipe Box",
-  slogan: "My digital recipe repository.",
+  slogan: "My digital recipe box",
   description: "Just recipes.  No travel diary.  No photos.  Just recipes.",
   social: {
     github: "https://github.com/steencreative", // leave empty if you don't want to show the github
